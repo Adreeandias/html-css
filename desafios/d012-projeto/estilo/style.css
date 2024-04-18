@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: passion one;
+    src: url('fontes/passionone-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+        font-family: Sriracha;
+        src: url('fontes/sriracha-regular.ttf') format('truetype');
+    }
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'passion one', cursive;
+    --fonte3: 'sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +26,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: ;
 }
 
 header {
@@ -19,6 +38,7 @@ header {
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
 }
 
 header > p {
@@ -45,6 +65,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3)
 }
 
 section.imagem {
